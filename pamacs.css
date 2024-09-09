@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+.top {
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    z-index: 1;
+}
+
+.logo {
+    height: 14vh;
+}
+
+.logo img {
+    height: 13.5vh;
+}
+
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* position: sticky; */
+    /* top: 0; */
+    margin-left: 20vw;
+}
+
+.navbar ul {
+    /* border: 1px solid black; */
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    /* border: 1px solid black; */
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    /*border: 1px solid yellowgreen;*/
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    /* border: 1px solid white; */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("/images/pamacs-home-bg.jpg") no-repeat center center/cover;
+    height: 840px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.homeTxt {
+    text-align: center;
+}
+
+.homeTxt h1 {
+    font-family: Impact;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.homeTxt h3 {
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.headings {
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#about {
+    background-color: white;
+}
+
+.headings {
+    /* border: 1px solid white; */
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    /* margin-top: 0px; */
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+#pic img {
+    width: 575px;
+    height: 400px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+#services h1 {
+    /* border: 3px solid green; */
+    grid-column: 1/4;
+}
+
+.services-grid {
+    background-color: white;
+    padding: 0 12px 0 12px;
+    display: grid;
+    grid-gap: 20px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.services-grid img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.live-chicken h3, .freshly-cut-chicken h3, .barbecue-chicken h3, .live-fish h3, .freshly-cut-fish h3, .barbecue-fish h3{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-family: cursive;
+}
+
+#contact {
+    background-color: #fff;
+}
+
+.image-phoneNo {
+    display: flex;
+    width: 25%;
+    margin: auto;
+}
+
+.image-phoneNo img {
+    height: 15vh;
+}
+
+.phone {
+    display: flex;
+    padding: 40px;
+}
+
+.call, .whatsapp, .phone h4 {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.phone h3 {
+    padding-left: 1rem;
+}
+
+.icons {
+    text-align: center;
+    font-size: 2rem;
+    /* padding-left: 2rem; */
+}
+
+.icons a {
+    color: black;
+}
+
+.icon {
+    padding-left: 2rem;
+}
