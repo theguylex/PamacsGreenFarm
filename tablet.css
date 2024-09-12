@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 #menu-icon {
     display: block;
     cursor: pointer;
@@ -36,9 +39,13 @@
 }
 
 .navbar.open {
-    left: -140px;
+    left: -170px;
 }
 
 .navbar .active {
     display: block;
+}
+
+#intro {
+    width: 100%;
 }
