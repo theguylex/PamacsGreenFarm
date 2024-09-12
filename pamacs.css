@@ -148,7 +148,7 @@ body {
 
 #pic {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 #pic img {
